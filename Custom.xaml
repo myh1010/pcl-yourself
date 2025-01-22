@@ -1,0 +1,33 @@
+<local:MyHint Margin="0,8,0,2" IsWarn="False"
+                    Text="欢迎使用 Your-self 主页" />
+<local:MyCard Title="常用功能" Margin="0,0,0,15" CanSwap="true">
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="25,40,23,15">
+            <local:MyButton Margin="0,0,10,0" Width="100" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                        Text="清理垃圾" EventType="清理垃圾" />
+            <local:MyButton Margin="0,0,10,0" Width="100" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                        Text="内存优化" EventType="内存优化" />
+            <local:MyButton Margin="0,0,10,0" Width="100" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                        Text="今日人品" EventType="今日人品" />
+            <local:MyButton Margin="0,0,10,0" Width="100" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                        Text="重载主页" EventType="刷新主页" />
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="常用网页" Margin="0,0,0,15" CanSwap="true">
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="25,40,23,15">
+                <local:MyImage Height="50" HorizontalAlignment="Center" Source="https://downloaderr.com/template/custom/img/brand-icons/bilibili.png" />
+                <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight" 
+                            Text="Bilibili" EventType="打开网页" EventData="https://www.bilibili.com/" ToolTip="哔哩哔哩 (゜-゜)つロ 干杯~-bilibili" />
+                <local:MyImage Height="50" HorizontalAlignment="Center" Source="https://static.wikia.nocookie.net/minecraft_de_gamepedia/images/0/05/Schatzkarte.png" />
+                <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight" 
+                            Text="Minecraft WIKI" EventType="打开网页" EventData="https://zh.minecraft.wiki/" ToolTip="维基百科" />
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="常玩服务器" Margin="0,0,0,15" CanSwap="true">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyButton Text="查找服务器" EventType="打开文件" EventData="nbt.exe" Height="35" />
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Title="name" Info="ip" EventType="启动游戏" EventData="\current|mc.hypixel.net" Type="Clickable" />
+        <local:MyListItem Margin="-5,2,-5,8"
+                    Title="name" Info="ip" EventType="启动游戏" EventData="\current|mc.hypixel.net" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>
